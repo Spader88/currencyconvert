@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/cash-outline.svg" type="image/png">
+    <title>Spader Currency Converter</title>
+</head>
+<body>
+    
+<div class="container">
+    <header>
+        <h1>Spader Currency Converter</h1>
+    </header>
+
+    <main>
+
+        <!-- Converter from-->
+
+        <label>
+            <b>From</b>
+            <select id="firstSelect">
+           
+                <option value="option1">----------</option>
+                <option value="option2">R$ Brazilian Real</option>
+                <option value="option3">US$ American Dollar</option>
+                <option value="option4">€ Euro</option>
+                
+              </select>
+
+              <b>To</b>
+              <select id="secondSelect">
+              </select>
+        </label>
+
+        
+        <!-- Input -->
+
+        <label>
+          <b>Enter Amount</b>
+            <input id="input-amount" placeholder="$ 0,00">
+        </label>
+
+        <!-- Button -->
+
+        <button id="convert-button" type="button"><b>Convert</b></button>
+
+        <section>
+
+            <div class="currency-container">
+                <img src="./assets/brasil.png" alt="brazilian_flag">
+                <p class="currency-name"><b>Real</b></p>
+                <p class="currency-value" id="to-value-text">R$ 10.000,00</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/Vector.png" alt="arrow.png">
+
+            
+            <div class="currency-container">
+                <div >
+                <img src="./assets/estados-unidos.png" id="currency-img" alt="american_flag">
+                <p class="currency-name" id="currency-name"><b>American Dollar</b></p>
+                <p class="currency-value" id="currency-converted-value">R$ 10.000,00</p>
+               
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+<script src="./scripts.js"></script>
+</html>
